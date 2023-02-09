@@ -13,6 +13,9 @@ RUN pip3 install --upgrade pip && \
 
 COPY ./app /app
 
+COPY /docker-entrypoint.sh /
+RUN chmod +x /docker-entrypoint.sh
 EXPOSE 3000
 
 WORKDIR /app
+CMD ["/docker-entrypoint.sh"]
