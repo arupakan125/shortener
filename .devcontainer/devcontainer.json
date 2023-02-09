@@ -1,0 +1,6 @@
+{
+  "name": "shortener",
+  "dockerFile": "../Dockerfile",
+  "appPort": 3000,
+  "extensions": []
+}
